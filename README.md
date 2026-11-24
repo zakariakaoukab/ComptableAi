@@ -2,7 +2,7 @@
 
 FiduIA est un backend professionnel de traitement comptable automatisé. Il extrait intelligemment les données des factures marocaines à l'aide de l'IA (Google Gemini 2.5 Flash Vision) et réalise une imputation comptable automatique selon le Plan Comptable Général Marocain (PCGM). L'application génère ensuite des écritures comptables compatibles avec les standards d'import du logiciel Sage.
 
-## 🌟 Fonctionnalités
+##  Fonctionnalités
 
 - **Extraction IA des factures** : Analyse des images et PDF via Google Gemini 2.5 Flash (Nouveau SDK google-genai) pour extraire les montants (HT, TVA, TTC) et les informations fournisseur (ICE, RC, IF, Nom).
 - **Imputation Comptable (PCGM)** : Attribution automatique du compte comptable feuille approprié parmi les 465 comptes du référentiel PCGM inclus.
@@ -20,7 +20,7 @@ FiduIA est un backend professionnel de traitement comptable automatisé. Il extr
 - **Traitement d'Image** : Pillow (PIL)
 - **Déploiement** : Docker & Docker Compose
 
-## 🚀 Installation & Démarrage (Local)
+##  Installation & Démarrage (Local)
 
 ### 1. Prérequis
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installé et en cours d'exécution.
@@ -51,7 +51,7 @@ docker-compose up --build -d
 - **Documentation interactive Swagger** : [http://localhost:8000/docs](http://localhost:8000/docs)
 - Les modifications du code dans le dossier `app/` sont synchronisées en temps réel dans le conteneur pour faciliter le développement.
 
-## 📚 API Endpoints
+##  API Endpoints
 
 Voici les principales routes de l'API :
 
@@ -66,7 +66,7 @@ Voici les principales routes de l'API :
 ### Export Comptable
 - `GET /api/v1/export/sage/{client_dossier_id}` : Télécharge un fichier CSV contenant les écritures comptables Sage (Crédit Fournisseur, Débit Charge, Débit TVA) de toutes les factures validées non encore exportées.
 
-## 🗂️ Structure du Projet
+##  Structure du Projet
 
 ```text
 Comptable Ai/
