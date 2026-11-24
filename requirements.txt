@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+sqlmodel
+sqlalchemy
+psycopg2-binary
+pydantic-settings
+google-genai
+Pillow
